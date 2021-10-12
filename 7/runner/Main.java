@@ -1,6 +1,8 @@
-package com.company;
+package by.epamtc.senkevichmaxim.task0107.runner;
 
 import java.util.Scanner;
+
+import static by.epamtc.senkevichmaxim.task0107.util.Logic.*;
 
 public class Main {
 
@@ -20,10 +22,5 @@ public class Main {
         else System.out.println("B(" + x2 + "; " + y2 + ")");
     }
 
-    public static double findLength(int x, int y){
 
-        double length = Math.sqrt( x*x + y*y);
-
-        return length;
-    }
 }

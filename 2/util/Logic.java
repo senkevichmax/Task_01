@@ -1,18 +1,7 @@
-package com.company;
+package by.epamtc.senkevichmaxim.task0102.util;
 
-import java.util.Scanner;
-
-public class Main {
-
-    public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Введите год: ");
-        int year = scanner.nextInt();
-        System.out.println("Введите месяц: ");
-        int month = scanner.nextInt();
-
+public class Logic {
+    public static void countOfDays(int month, int year){
         if(month == 4 || month == 6 || month == 9 || month == 11)
             System.out.println("30 дней");
 
@@ -32,6 +21,5 @@ public class Main {
             else
                 System.out.println("28 дней");
         }
-
     }
 }

@@ -1,6 +1,8 @@
-package com.company;
+package by.epamtc.senkevichmaxim.task0108.runner;
 
 import java.util.Scanner;
+
+import static by.epamtc.senkevichmaxim.task0108.util.Logic.*;
 
 public class Main {
 
@@ -10,13 +12,9 @@ public class Main {
 
         System.out.println("Введите х: ");
 
-        int x = scanner.nextInt();
-        double fx;
-        if (x >= 3) {
-            fx = -x * x + 3 * x + 9;
-        } else {
-            fx = 1 / (Math.pow(x, 3) - 6);
-        }
+        double x = scanner.nextInt();
+        double fx =function(x);
+
         System.out.println("F(x)=" + fx);
     }
 }

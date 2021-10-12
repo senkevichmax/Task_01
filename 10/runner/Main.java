@@ -1,4 +1,4 @@
-package com.company;
+package by.epamtc.senkevichmaxim.task0110.runner;
 
 import java.util.Scanner;
 

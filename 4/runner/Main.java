@@ -1,4 +1,6 @@
-package com.company;
+package by.epamtc.senkevichmaxim.task0104.runner;
+
+import by.epamtc.senkevichmaxim.task0104.util.Logic;
 
 import java.util.Scanner;
 
@@ -15,24 +17,7 @@ public class Main {
         int c = scanner.nextInt();
         System.out.print("-> ");
         int d = scanner.nextInt();
-        System.out.println(parityCheck(a, b, c, d));
+        System.out.println(Logic.parityCheck(a, b, c, d));
     }
 
-    public static boolean parityCheck(int a, int b, int c, int d){
-
-        int check = 0;
-
-        if(a%2 == 0)
-            check++;
-        if(b%2 == 0)
-            check++;
-        if(c%2 == 0)
-            check++;
-        if(d%2 == 0)
-            check++;
-
-        if(check>=2)
-            return true;
-        else return false;
-    }
 }

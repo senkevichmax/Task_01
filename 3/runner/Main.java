@@ -1,4 +1,6 @@
-package com.company;
+package by.epamtc.senkevichmaxim.task0103.runner;
+
+import by.epamtc.senkevichmaxim.task0103.util.Logic;
 
 import java.util.Scanner;
 
@@ -11,11 +13,9 @@ public class Main {
         System.out.println("Введите площадь заданного квадрата:");
 
         double s1 = scanner.nextDouble();
-        double d = Math.sqrt(s1);
-        double s2 = d*d/2;
-        double difference = s1/s2;
+        double s2 = Logic.squareDiiferencce(s1);
 
         System.out.println("Площадь вписанного квадрата: " + s2);
-        System.out.println("Разница площадей квадратов: " + difference);
+        System.out.println("Разница площадей квадратов: 2");
     }
 }
